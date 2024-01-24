@@ -26,7 +26,7 @@ Widget commonContainer(String text1, text2, text3, image, bool imageLeft) {
             text1.toUpperCase(),
             style: TextStyle(color: Colors.grey.shade400, fontSize: 16),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
             text2,
             textAlign: imageLeft ? TextAlign.right : TextAlign.left,
@@ -36,14 +36,14 @@ Widget commonContainer(String text1, text2, text3, image, bool imageLeft) {
 
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
             text3.toUpperCase(),
             style: TextStyle(color: Colors.grey.shade400, fontSize: 16),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           TextButton.icon(
-              onPressed: (){}, icon: Icon(Icons.arrow_forward,color: Colors.orange,size: 20,), label: Text("Learn More",style: TextStyle(
+              onPressed: (){}, icon: const Icon(Icons.arrow_forward,color: Colors.orange,size: 20,), label: const Text("Learn More",style: TextStyle(
             color: Colors.orange
           ),))
         ],

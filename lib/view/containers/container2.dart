@@ -104,11 +104,11 @@ class _Container2State extends State<Container2> {
       child: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(left: 20, right: 20, bottom: 0, top: 20),
+            padding: const EdgeInsets.only(left: 20, right: 20, bottom: 0, top: 20),
             child: Container(
               height: 230,
               width: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage(dashboard))),
             ),
@@ -116,7 +116,7 @@ class _Container2State extends State<Container2> {
           Container(
             width: double.infinity,
             color: Colors.grey.shade50,
-            padding: EdgeInsets.symmetric(vertical: 40),
+            padding: const EdgeInsets.symmetric(vertical: 40),
             child: Column(
               children: [
                 companyLogo(fb),

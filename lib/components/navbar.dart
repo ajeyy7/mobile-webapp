@@ -16,29 +16,29 @@ class _NavBarState extends State<NavBar> {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
 
-      mobile: MobileNavBar(),
-      desktop: DesktopNavBar(),
+      mobile: mobileNavBar(),
+      desktop: desktopNavBar(),
     );
   }
 
   ///for mobile screens
 
-  Widget MobileNavBar() {
+  Widget mobileNavBar() {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20),
+      margin: const EdgeInsets.symmetric(horizontal: 20),
       height: 70,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [Icon(Icons.menu), navLogo()],
+        children: [const Icon(Icons.menu), navLogo()],
       ),
     );
   }
 
   ///for desktop screens
 
-  Widget DesktopNavBar() {
+  Widget desktopNavBar() {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       height: 70,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -69,7 +69,7 @@ class _NavBarState extends State<NavBar> {
 
   Widget navButton(String text) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 10),
+      margin: const EdgeInsets.symmetric(horizontal: 10),
       child: TextButton(
           onPressed: () {},
           child: Text(

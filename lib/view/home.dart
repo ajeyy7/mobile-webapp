@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          child: Column(
+          child: const Column(
             children: [
               NavBar(),
               Container1(),

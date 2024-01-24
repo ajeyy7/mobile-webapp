@@ -16,7 +16,7 @@ Widget mobileCommonContainer(String text1, text2, text3, image) {
           text1.toUpperCase(),
           style: TextStyle(color: Colors.grey.shade400, fontSize: 16),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           text2,
           style: const TextStyle(
@@ -26,7 +26,7 @@ Widget mobileCommonContainer(String text1, text2, text3, image) {
             height: 1,
           ),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Padding(
           padding: const EdgeInsets.all(18.0),
           child: Text(
@@ -34,15 +34,15 @@ Widget mobileCommonContainer(String text1, text2, text3, image) {
             style: TextStyle(color: Colors.grey.shade400, fontSize: 14),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         TextButton.icon(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_forward,
               color: Colors.orange,
               size: 20,
             ),
-            label: Text(
+            label: const Text(
               "Learn More",
               style: TextStyle(color: Colors.orange),
             ))

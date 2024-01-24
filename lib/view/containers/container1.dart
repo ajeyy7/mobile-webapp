@@ -14,7 +14,7 @@ class _Container1State extends State<Container1> {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: mobileContainer(),
-      desktop: DesktopContainer1(),
+      desktop: desktopContainer1(),
     );
   }
 
@@ -26,23 +26,23 @@ class _Container1State extends State<Container1> {
         children: [
           Container(
             height: 280,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.contain, image: AssetImage(illustration1))),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
             "Track your \nExpenses to \nSave Money",
             style: TextStyle(
                 fontSize: w! / 10, fontWeight: FontWeight.bold, height: 1.1),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
             "Helps you to organize your income and expenses",
             style: TextStyle(color: Colors.grey.shade400, fontSize: 14),
           ),
-          SizedBox(height: 20),
-          Container(
+          const SizedBox(height: 20),
+          SizedBox(
             height: 45,
             child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
@@ -54,7 +54,7 @@ class _Container1State extends State<Container1> {
                   style: TextStyle(color: Colors.grey.shade50),
                 )),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
             "— Web, iOs and Android",
             style: TextStyle(color: Colors.grey.shade400, fontSize: 17),
@@ -66,7 +66,7 @@ class _Container1State extends State<Container1> {
 
   //=======================DeskTop==========================
 
-  Widget DesktopContainer1() {
+  Widget desktopContainer1() {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: w! / 10, vertical: 20),
       child: Row(
@@ -83,12 +83,12 @@ class _Container1State extends State<Container1> {
                       fontWeight: FontWeight.bold,
                       height: 1.2),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Text(
                   "Helps you to organize your income and expenses",
                   style: TextStyle(color: Colors.grey.shade400, fontSize: 17),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   children: [
                     Container(
@@ -104,7 +104,7 @@ class _Container1State extends State<Container1> {
                             style: TextStyle(color: Colors.grey.shade50),
                           )),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     Text(
                       "— Web, iOs and Android",
                       style:
@@ -118,7 +118,7 @@ class _Container1State extends State<Container1> {
           Expanded(
               child: Container(
             height: 540,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.contain, image: AssetImage(illustration1))),
           ))
